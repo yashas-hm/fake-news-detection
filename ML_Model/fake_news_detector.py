@@ -37,5 +37,10 @@ class FactChecker:
         val = model.predict(pad_doc)
         del model
         val = val > 0.5
-        ret_val = {"fakeNews": str(val[0][0])}
+        value = ''
+        if val[0][0]:
+            value = "true"
+        else:
+            value = "false"
+        ret_val = {"fakeNews": value}
         return ret_val
