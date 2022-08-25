@@ -130,3 +130,4 @@ dmypy.json
 ./nltk_data
 ./Lib
 ./site-packages
+./nltk_data
