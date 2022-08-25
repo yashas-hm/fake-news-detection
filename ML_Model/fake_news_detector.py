@@ -36,6 +36,6 @@ class FactChecker:
         model.load_weights(filepath='./ML_Model/weights.h5')
         val = model.predict(pad_doc)
         del model
-        val = val < 0.5
+        val = val > 0.5
         ret_val = {'fakeNews': val[0][0]}
         return ret_val
