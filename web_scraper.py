@@ -4,6 +4,11 @@ import json
 import pandas as pd
 
 
+# india tv
+# indian express
+# livemint
+# livelaw
+# economic times/india times
 class WebScraper:
     @staticmethod
     def economic_times_scraper(url):
